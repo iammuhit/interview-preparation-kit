@@ -5,7 +5,8 @@
         IndexOptions FancyIndexing FoldersFirst
         IndexOptions IconHeight=10 IconWidth=10
         IndexOrderDefault Ascending Name
-        IndexIgnore docker-compose.yml icon-php.png *.in *.out Outputs
+        IndexIgnore docker-compose.yml README.md Setup.php icon-php.png
+        IndexIgnore *.in *.out Outputs
         AddIcon /icon-php.png *.php
     </IfModule>
 </IfModule>
