@@ -1,6 +1,6 @@
 <?php
 
-require dirname(__DIR__) . '/Setup.php';
+require dirname(__DIR__) . "/Setup.php";
 
 $setup = new App\Setup;
 $setup->run(__FILE__);
@@ -19,13 +19,13 @@ function countingValleys($steps, $path) {
     $count = 0;
 
     for($i=0; $i<$steps; $i++) {
-        if($path[$i] == 'U') {
+        if($path[$i] == "U") {
             $level += 1;
-        } else if($path[$i] == 'D') {
+        } else if($path[$i] == "D") {
             $level -= 1;
         }
 
-        if($level == 0 && $path[$i] == 'U') {
+        if($level == 0 && $path[$i] == "U") {
             $count += 1;
         }
     }
