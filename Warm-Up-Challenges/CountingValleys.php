@@ -1,8 +1,9 @@
 <?php
 
-define('STDIN', fopen('CountingValleys.in', 'r'));
-define('STDOUT', dirname(__DIR__) . '/Outputs/CountingValleys.out');
-putenv(sprintf('OUTPUT_PATH=%s', STDOUT));
+require dirname(__DIR__) . '/Setup.php';
+
+$setup = new App\Setup;
+$setup->run(__FILE__);
 
 /*
  * Complete the 'countingValleys' function below.
