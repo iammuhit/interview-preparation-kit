@@ -11,4 +11,4 @@ cd interview-preparation-kit && docker-compose up -d
 ```
 
 ### User Guide
-Start the application by visiting http://localhost/
+Start the application by visiting http://localhost:8080/

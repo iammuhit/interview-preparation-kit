@@ -6,11 +6,11 @@ services:
     image: php:8.0-apache
     restart: always
     environment:
-      OUTPUT_PATH: /var/www/html/Outputs/example.out
+      OUTPUT_PATH: /var/www/html/Outputs/Result.out
     volumes:
       - .:/var/www/html
     ports:
-      - 80:80
+      - 8080:80
 
 networks:
   backend:
