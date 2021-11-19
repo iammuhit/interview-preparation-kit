@@ -1,0 +1,11 @@
+<IfModule mod_negotiation.c>
+    Options +Indexes
+
+    <IfModule mod_autoindex.c>
+        IndexOptions FancyIndexing FoldersFirst
+        IndexOptions IconHeight=10 IconWidth=10
+        IndexOrderDefault Ascending Name
+        IndexIgnore docker-compose.yml icon-php.png *.in *.out Outputs
+        AddIcon /icon-php.png *.php
+    </IfModule>
+</IfModule>

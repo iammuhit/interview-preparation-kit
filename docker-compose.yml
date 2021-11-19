@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  web:
+    container_name: iammuhit/interview-preparation-kit
+    image: php:8.0-apache
+    restart: always
+    environment:
+      OUTPUT_PATH: /var/www/html/Outputs/example.out
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 80:80
+
+networks:
+  backend:
+
+volumes:
+  web:
