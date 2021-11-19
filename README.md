@@ -7,8 +7,7 @@
 ### Getting Started
 ```sh
 git clone https://github.com/iammuhit/interview-preparation-kit.git
-cd interview-preparation-kit
-docker-compose up -d
+cd interview-preparation-kit && docker-compose up -d
 ```
 
 ### User Guide
